@@ -4,8 +4,11 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
     background-color: #cdcdcd;
+    text-align: center;
+    padding: 40px;
 }
 
 footer{
@@ -13,4 +16,20 @@ footer{
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+main{
+    display: flex;
+    gap: 20px;
+}
+#content img{
+    width: 100%;    
+}
+@media (max-width: 576px) {
+    main {
+        flex-direction: column;
+    }
+    header h1 {
+        color: red;
+    }
 }
