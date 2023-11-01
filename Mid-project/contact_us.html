@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="stylesheet.css">
+    <style>
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+textarea {
+  height: 100px;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: blueviolet;
+}
+.error-message {
+  color: pink;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+}
+</style>
+</head>
+<body>
+    <header class="header2" id="header2">
+        <div class="header-inner">
+            <div class="header__region"><a href="https://fti.unai.edu">FTI UNAI</a></div>
+            <div class="header__region2" style="width: 66px;"><a href="https://unai.edu">Web UNAI</a></div>
+            <div class="header__logoSet">
+                        </div>
+        <div class="header__utility">
+            <h3>Click here to acces another link :</h3>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="Biodata.html">Biodata</a></p>
+            <p><a href="contact_us.html">Contact Us!</a></p>
+            <p><a href="hello.html">Extend me</a></p>
+
+        </div>
+    </header>
+
+  <h1>Contact Us</h1>
+  <form action="submit_form.php" method="POST">
+    <label for="fullname">Nama lengkap:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="username">Panggilan:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="gender">Jenis kelamin:</label>
+
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Laki-laki</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Perempuan</label>
+
+    <label for="religion">Agama:</label>
+    <select id="religion" name="religion" required>
+      <option value="">Silahkan Pilih</option>
+      <option value="christian">Kristen</option>
+      <option value="Moslem">Islam</option>
+      <option value="Hindu">Hindu</option>
+      <option value="Buddhist">Buddha</option>
+      <option value="other">Lainnya</option>
+    </select>
+
+    <label for="address">Alamat:</label>
+    <textarea id="address" name="address" required></textarea>
+
+    <label for="hobbies">Hobby:</label>
+    <input type="checkbox" id="hobby1" name="hobbies[]" value="Berenang">
+    <label for="hobby1">Bermusik</label>
+    <input type="checkbox" id="hobby2" name="hobbies[]" value="Membaca">
+    <label for="hobby2">Jalan-Jalan</label>
+    <input type="checkbox" id="hobby3" name="hobbies[]" value="Menulis">
+    <label for="hobby3">Makan</label>
+
+    <input type="submit" value="Simpan">
+  </form>
+</body>
+<header class="header2" id="header2">
+    <div class="header-inner">
+        <div class="header__region"><a href="https://fti.unai.edu">FTI UNAI</a></div>
+        <div class="header__region2" style="width: 66px;"><a href="https://unai.edu">Web UNAI</a></div>
+        <div class="header__logoSet">
+        <h1 class="header__logo"><a href="/"><img src="logo.jpg" width="68" height="68" alt="Nikon"></a></h1>
+    </div>
+    <div class="header__utility">
+        <ul class="header_utility_links">
+            <li class="header_utilitylink headerutility_sites">
+                <a href="index.html" target="_blank">Home</a>
+            </li>
+            <li class="header_utilitylink headerutility_sites">
+                <a href="biodata.html" target="_blank">Biodata</a>
+            </li>
+            <li class="header_utilitylink headerutility_sites">
+                <a href="contact_us.html">Contact Us!</a>
+            </li>
+         </ul>
+    </div>
+</header>
+</html>
